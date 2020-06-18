@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+
+
+{%block head%} 
+<title>투두리스트 업데이트</title>
+{%endblock%}
+
+
+{%block body%} 
+<div class="container text-center">
+    <h1>업데이트</h1>
+
+    <form action="/update/{{task.id}}" method="post">
+        <input type="text" name = "content" id="content" value = '{{task.content}}'>
+        <input type="submit" value="업데이트">
+    </form>
+</div>
+{%endblock%}
