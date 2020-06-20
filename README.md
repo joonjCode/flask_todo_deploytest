@@ -11,12 +11,12 @@ windows : `pip install virtualenv`
 mac : `pip3 install virtualenv`  
 
 Create
-mac : `python3 -m venv ./venv`
+mac : `python3 -m venv ./venv`  
 windows : `python -m venv ./venv`
 
 ## activate venv
-mac : source venv/bin/activate
-windows : venv\Scripts\activate.ps1
+mac : `source venv/bin/activate`
+windows : `venv\Scripts\activate.ps1`
 
 ## install requirements.txt 
 This will install packages inside the text file
